@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+ <defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3d2b8"/><stop offset="1" stop-color="#b7c0ab"/></linearGradient>
+ <linearGradient id="wall" x1="0" y1="0" x2="1" y2=".85"><stop stop-color="#bfc4a9"/><stop offset=".7" stop-color="#c0ad91"/><stop offset="1" stop-color="#7f8e78"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#57776e"/><stop offset=".55" stop-color="#8f9d83"/><stop offset="1" stop-color="#495e56"/></linearGradient>
+ <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#638b87"/><stop offset="1" stop-color="#99c4b2"/></linearGradient>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="2" seed="11" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".09"/></feComponentTransfer></filter>
+ </defs>
+ <rect width="1600" height="1000" fill="url(#sky)"/>
+ <path d="M0 420q230-85 470-32t490 3 640-41v280H0" fill="#829780" opacity=".5"/>
+ <g transform="translate(1600 0) scale(-1 1)">
+ <path d="M0 675 145 621 1430 630 1600 677V1000H0" fill="#b2b09b"/>
+ <path d="M0 780 1600 720V1000H0" fill="#d4cbbb"/>
+ <!-- Architectural villa, carefully simplified as a local fallback illustration -->
+ <path d="M225 342h1030v380H225z" fill="url(#wall)"/>
+ <path d="M172 318h1140v47H172z" fill="#e6dccc"/>
+ <path d="M277 385h303v280H277z" fill="#dde0d1"/>
+ <path d="M615 384h585v281H615z" fill="url(#glass)"/>
+ <path d="M623 388h24v274h-24zM812 387h15v275h-15zM995 387h15v276h-15z" fill="#c5bea7"/>
+ <path d="M614 663h591v18H614z" fill="#b7aa92"/>
+ <path d="M311 438h240v190H311z" fill="#a9ad99"/>
+ <path d="M321 454h220v167H321z" fill="#496d62" opacity=".66"/>
+ <path d="M335 596h191v21H335z" fill="#6f7c68"/>
+ <path d="M124 742 1464 728 1580 1000H0" fill="#b1aaa0"/>
+ <path d="M240 762 1220 752 1390 1000H110" fill="url(#water)"/>
+ <path d="M251 787 1210 770M220 836l1070-25M187 904l1130-24" stroke="#d8e3d1" stroke-opacity=".3" stroke-width="7"/>
+ <path d="M155 739h1130" stroke="#f2e7d3" stroke-width="24"/>
+ <path d="M104 715h1380" stroke="#8c8d78" stroke-width="3"/>
+ <!-- Palms and foliage -->
+ <path d="M82 738q-18-270 54-500" stroke="#776953" stroke-width="29" fill="none"/>
+ <g fill="#56715b" opacity=".94"><path d="M136 237Q-8 145-65 198q103-12 201 39"/><path d="M134 240Q57 65-35 93q94 41 169 147"/><path d="M136 237q40-185 144-189-98 72-144 189"/><path d="M136 240q120-91 272-12-144-25-272 12"/><path d="M136 237q-94 16-169 124 89-70 169-124"/><path d="M136 237q39 77 13 205-13-106-13-205"/></g>
+ <path d="M1520 785q35-340-49-551" stroke="#756e5c" stroke-width="27" fill="none"/>
+ <g fill="#56715b" opacity=".95"><path d="M1471 236q-132-131-263-95 146 20 263 95"/><path d="M1471 236q-3-165-106-208 75 99 106 208"/><path d="M1471 236q89-179 184-165-100 81-184 165"/><path d="M1471 236q91-45 203 34-120-22-203-34"/><path d="M1471 236q-89 70-92 216 52-140 92-216"/></g>
+ <g fill="#56715b" opacity=".74"><ellipse cx="110" cy="689" rx="95" ry="87"/><ellipse cx="1514" cy="680" rx="145" ry="114"/><ellipse cx="1423" cy="691" rx="85" ry="78"/></g>
+ </g>
+ <rect width="1600" height="1000" filter="url(#grain)" opacity=".34"/>
+ </svg>
